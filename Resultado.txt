@@ -1,1 +1,1 @@
-Su edad es: 32 años y 2 meses
+La edad calculada es: 35 años con 2 meses

@@ -5,7 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 import java.util.Calendar;
-
 import javax.swing.*;
 
 public class Input extends JFrame{
@@ -104,7 +103,7 @@ public class Input extends JFrame{
         int edadAños = hoy.get(Calendar.YEAR) - birthDay.get(Calendar.YEAR);
         
         int edadMeses = 0;
-        //System.out.println(birthDay.get(Calendar.MONTH));
+
         if(hoy.get(Calendar.MONTH) < birthDay.get(Calendar.MONTH)){
         	edadMeses = 12 - (birthDay.get(Calendar.MONTH) - hoy.get(Calendar.MONTH));
             edadAños = edadAños - 1;
@@ -112,7 +111,7 @@ public class Input extends JFrame{
         	edadMeses =  hoy.get(Calendar.MONTH) - birthDay.get(Calendar.MONTH);
         }
         
-        String resultado = "Su edad es: "+ edadAños + " años y "+edadMeses + " meses";
+        String resultado = "La edad calculada es: "+ edadAños + " años con "+edadMeses + " meses";
         escribirArchivo(resultado);
         JOptionPane.showMessageDialog(null,resultado);
         
